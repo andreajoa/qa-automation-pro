@@ -2,26 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/**/*.js",
+      "src": "src/qa-automation-multi-store.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/src/qa-automation-multi-store.js"
-    },
-    {
-      "src": "/auth/callback",
-      "dest": "/src/qa-automation-multi-store.js"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/src/qa-automation-multi-store.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "/src/qa-automation-multi-store.js"
     }
-  ]
+  ],
+  "functions": {
+    "src/qa-automation-multi-store.js": {
+      "maxDuration": 30
+    }
+  }
 }
