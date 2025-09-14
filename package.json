@@ -1,0 +1,33 @@
+{
+  "name": "shopify-qa-automation",
+  "version": "1.0.0",
+  "description": "Sistema QA automatizado para Shopify",
+  "type": "module",
+  "main": "src/qa-automation-cutting-edge.js",
+  "scripts": {
+    "start": "node src/qa-automation-cutting-edge.js",
+    "test": "node src/test-shopify.js",
+    "dev": "node --watch src/qa-automation-cutting-edge.js",
+    "setup": "node scripts/setup.js",
+    "auto-run": "node src/qa-automation-cutting-edge.js --auto-run"
+  },
+  "keywords": [
+    "shopify",
+    "qa",
+    "automation",
+    "seo",
+    "enterprise"
+  ],
+  "author": "Loja Luzia",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.0.1",
+    "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
